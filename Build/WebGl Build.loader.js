@@ -253,8 +253,6 @@ function createUnityInstance(canvas, config, onProgress) {
     // TODO: Add mobile device identifier, e.g. SM-G960U
 
     canvas = document.createElement("canvas");
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
     if (canvas) {
       gl = canvas.getContext("webgl2");
       glVersion = gl ? 2 : 0;
