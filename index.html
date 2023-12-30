@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Swift.io</title>
   </head>
   <body style="text-align: center">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: url('Build/WebGl Build.jpg.gz') center / cover"></canvas>
+    <canvas id="unity-canvas" width=1920 height=900 style="width: 1920px; height: 900px; background: url('Build/WebGl Build.jpg') center / cover"></canvas>
     <script src="Build/WebGl Build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -18,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGl Build.data.gz",
-        frameworkUrl: "Build/WebGl Build.framework.js.gz",
-        codeUrl: "Build/WebGl Build.wasm.gz",
+        dataUrl: "Build/WebGl Build.data",
+        frameworkUrl: "Build/WebGl Build.framework.js",
+        codeUrl: "Build/WebGl Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Bro Dog INC",
         productName: "Swift.io",
